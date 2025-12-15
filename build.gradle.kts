@@ -24,10 +24,16 @@ apiValidation {
 
 allprojects {
     val VERSION_NAME: String by project
+    val VERSION_CODE: String by project
     val GROUP: String by project
 
     version = VERSION_NAME
     group = GROUP
+
+    extra.apply {
+        set("VERSION_NAME", VERSION_NAME)
+        set("VERSION_CODE", VERSION_CODE)
+    }
 
     tasks.withType<Test> {
         testLogging {

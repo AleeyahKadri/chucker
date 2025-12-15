@@ -55,5 +55,5 @@ dependencies {
     implementation(libs.jetbrains.kotlin.stdlib)
 }
 
-apply(from = rootProject.file("gradle/gradle-mvn-push.gradle"))
-apply(from = rootProject.file("gradle/kotlin-static-analysis.gradle"))
+apply(from = rootProject.file("gradle/gradle-mvn-push.gradle.kts"))
+apply(from = rootProject.file("gradle/kotlin-static-analysis.gradle.kts"))
