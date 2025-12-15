@@ -35,13 +35,6 @@ android {
     compileSdk = compileSdkVersion
     namespace = "com.chuckerteam.chucker"
 
-    compileOptions {
-        (this as ExtensionAware).extensions.getByName<org.jetbrains.kotlin.gradle.dsl.KotlinJvmOptions>("kotlinOptions").freeCompilerArgs += listOf(
-            "-module-name", "com.github.ChuckerTeam.Chucker.library",
-            "-Xexplicit-api=strict"
-        )
-    }
-
     defaultConfig {
         minSdk = minSdkVersion
         consumerProguardFiles("proguard-rules.pro")
@@ -85,6 +78,15 @@ android {
         abortOnError = true
         disable += listOf("RtlEnabled", "GradleDependency")
         warningsAsErrors = true
+    }
+}
+
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
+    kotlinOptions {
+        freeCompilerArgs += listOf(
+            "-module-name", "com.github.ChuckerTeam.Chucker.library",
+            "-Xexplicit-api=strict"
+        )
     }
 }
 
