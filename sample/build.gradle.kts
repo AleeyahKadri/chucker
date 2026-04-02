@@ -121,4 +121,4 @@ dependencies {
     debugImplementation("com.squareup.leakcanary:leakcanary-android:$leakcanaryVersion")
 }
 
-apply(from = rootProject.file("gradle/kotlin-static-analysis.gradle"))
+apply(from = rootProject.file("gradle/kotlin-static-analysis.gradle.kts"))

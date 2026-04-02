@@ -102,16 +102,16 @@ buildscript {
     }
 
     dependencies {
-        classpath("com.android.tools.build:gradle:$androidGradleVersion")
-        classpath("de.mannodermaus.gradle.plugins:android-junit5:$junitGradlePluignVersion")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
-        classpath("com.apollographql.apollo3:apollo-gradle-plugin:$apolloVersion")
-        classpath("io.gitlab.arturbosch.detekt:detekt-gradle-plugin:$detektVersion")
-        classpath("org.jlleitschuh.gradle:ktlint-gradle:$ktLintGradleVersion")
-        classpath("org.jetbrains.kotlinx:binary-compatibility-validator:$binaryCompatibilityValidator")
-        classpath("com.squareup.wire:wire-gradle-plugin:$wireVersion")
-        classpath("io.codearte.gradle.nexus:gradle-nexus-staging-plugin:$nexusStagingPlugin")
-        classpath("com.google.devtools.ksp:symbol-processing-gradle-plugin:$kspVersion")
+        classpath("com.android.tools.build:gradle:8.10.1")
+        classpath("de.mannodermaus.gradle.plugins:android-junit5:1.13.0.0")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.21")
+        classpath("com.apollographql.apollo3:apollo-gradle-plugin:3.8.6")
+        classpath("io.gitlab.arturbosch.detekt:detekt-gradle-plugin:1.23.8")
+        classpath("org.jlleitschuh.gradle:ktlint-gradle:12.3.0")
+        classpath("org.jetbrains.kotlinx:binary-compatibility-validator:0.17.0")
+        classpath("com.squareup.wire:wire-gradle-plugin:5.3.3")
+        classpath("io.codearte.gradle.nexus:gradle-nexus-staging-plugin:0.30.0")
+        classpath("com.google.devtools.ksp:symbol-processing-gradle-plugin:2.1.21-2.0.2")
     }
 }
 
