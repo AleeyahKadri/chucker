@@ -10,7 +10,7 @@ val minSdkVersion: Int by rootProject.extra
 val targetSdkVersion: Int by rootProject.extra
 
 val androidXTestRunner: String by rootProject.extra
-val androidXExpresso: String by rootProject.extra
+val androidXEspresso: String by rootProject.extra
 val androidXExtJUnit: String by rootProject.extra
 val kotlinVersion: String by rootProject.extra
 val coroutineVersion: String by rootProject.extra
@@ -99,7 +99,7 @@ apollo {
 
 dependencies {
     implementation("androidx.test:runner:$androidXTestRunner")
-    androidTestImplementation("androidx.test.espresso:espresso-core:$androidXExpresso")
+    androidTestImplementation("androidx.test.espresso:espresso-core:$androidXEspresso")
     androidTestImplementation("androidx.test.ext:junit:$androidXExtJUnit")
     debugImplementation(project(":library"))
     releaseImplementation(project(":library-no-op"))

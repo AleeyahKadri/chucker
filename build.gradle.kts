@@ -38,7 +38,7 @@ val apolloVersion = "3.8.6"
 
 // Testing
 val androidxTestCoreVersion = "1.6.1"
-val junitGradlePluignVersion = "1.13.0.0"
+val junitGradlePluginVersion = "1.13.0.0"
 val junitVersion = "5.11.4"
 val junit4Version = "4.13.2"
 val mockkVersion = "1.14.2"
@@ -47,7 +47,7 @@ val truthVersion = "1.4.4"
 val androidXTestRunner = "1.6.2"
 val androidXTestRules = "1.6.1"
 val androidXTestExt = "1.2.1"
-val androidXExpresso = "3.6.1"
+val androidXEspresso = "3.6.1"
 val androidXExtJUnit = "1.2.1"
 
 // Publishing
@@ -78,7 +78,7 @@ extra.apply {
     set("leakcanaryVersion", leakcanaryVersion)
     set("apolloVersion", apolloVersion)
     set("androidxTestCoreVersion", androidxTestCoreVersion)
-    set("junitGradlePluignVersion", junitGradlePluignVersion)
+    set("junitGradlePluginVersion", junitGradlePluginVersion)
     set("junitVersion", junitVersion)
     set("junit4Version", junit4Version)
     set("mockkVersion", mockkVersion)
@@ -87,7 +87,7 @@ extra.apply {
     set("androidXTestRunner", androidXTestRunner)
     set("androidXTestRules", androidXTestRules)
     set("androidXTestExt", androidXTestExt)
-    set("androidXExpresso", androidXExpresso)
+    set("androidXEspresso", androidXEspresso)
     set("androidXExtJUnit", androidXExtJUnit)
     set("nexusStagingPlugin", nexusStagingPlugin)
     set("minSdkVersion", 21)
